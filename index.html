@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Visualization Project 1 - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: OnePage - v4.0.1
+  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+ 
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Top Countries Statistics</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Welcome</a></li>
+          <li><a class="nav-link scrollto" href="#about">Introduction</a></li>
+          <li><a class="nav-link scrollto o" href="#expenditure">Expenditure Statistics</a></li>
+          <li><a class="nav-link scrollto" href="#heatmap">Geographic View</a></li>
+          <li><a class="nav-link scrollto" href="#country">Country Dashboard</a></li>
+          <li><a class="nav-link scrollto" href="#compare">Country Compare</a></li>
+          <li><a class="nav-link scrollto" href="#conclusion">Conclusion</a></li>
+          <li><a class="nav-link scrollto" href="#source">Data Sources</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-9 text-center">
+          <h1>Top Countries Expenditure Statistics</h1>
+          <h2>Created by Christopher Taylor</h2>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Introduction</h2>
+          <p></p>
+        </div>
+
+        <div class="row content" style = 'height: 600px;'>
+          <div class="col-lg-6">
+            <p>
+              This project takes a look into military, education and healthcare expenditure of countries part of the OECD, 
+              Organisation for Economic Cooperation and Development and a few key countries outside of the organization. The data shown here is combination of data from OCED and 
+              the World Bank. Please see the data source section for more details. 
+              The key factors covered in this project are looking at these expenditures over various other factors like 
+              population, GDP, and geography. Expenditure statistics reviews at a high level all the countries expenditures
+              and metrics at a high level, to help facilitate what you would like to review. The next three sections drives at 
+              answering question more specifically by looking at data from geographic view, country level, and
+              a strong comparison chart. the objective of this analysis is to allow exploration of the data and get a strong sense
+              of how countries compare to each but also how they spend resources in these three key areas. 
+              
+            </p>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <img src="assets/img/OECD Image.png" class="img" alt="" style="width:250px;height:150px;">
+            <div class = "w-100"></div>
+            <img src="assets/img/World Bank.jpg" class="img" alt="" style="width:150px;height:150px;">
+          </div>
+        </div>
+
+      </div>
+
+     
+    </section>
+    
+    <!-- ====== End About Section ===== -->
+
+    
+
+    <!-- ======= Expenditure Statistics Section ======= -->
+    <section id="expenditure" class="expenditure section-bg">
+      <div class="container" data-aos="fade-up">
+        
+        <div class="section-title">
+          <h2> Expenditure Statistics</h2>
+          <p>Please select an expenditure category.</p>
+          <br>
+        </div>
+
+         <!-- ====== Custom Metric Selection ====== -->
+         <div class="custom-select-wrapper">
+          <div class="custom-select">
+              <div class="custom-select__trigger"><span>Military Expenditure</span>
+                  <div class="arrow"></div>
+              </div>
+              <div class="custom-options">
+                  <span class="custom-option selected" data-value="Military">Military Expenditure</span>
+                  <span class="custom-option" data-value="Education">Education Expenditure</span>
+                  <span class="custom-option" data-value="Healthcare">Healthcare Expenditure</span>
+                  <span class="custom-option" data-value="GDP">GDP</span>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+
+          <div class="col" data-aos="fade-up" data-aos-delay="100">
+            <h3> Dollar Expenditure</h3>
+            <div id="expense_spending_div" style="width: 100%; height: 500px"></div>
+            
+          </div>
+          
+          <div class="col" data-aos="fade-up" data-aos-delay="100">
+            <h3> Expenditure % of GDP</h3>
+            <div id="percent_gdp_div" style="width: 100%; height: 500px"></div>
+            <p> Please note GDP will show up blank for this tile</p>
+           
+          </div>
+
+          <div class = "w-100"></div>
+          <!--div to split the section into rows-->
+
+          <div class="col" data-aos="fade-up" data-aos-delay="100">
+            <h3> Expenditure Per Capita</h3>
+            <div id="per_capita_div" style="width: 100%; height: 500px"></div>
+            
+          </div>
+          <div class="col" data-aos="fade-up" data-aos-delay="100">
+            <h3> Dollar & Percent Change</h3>
+            <div id="change_div" style="width: 100%; height: 250px"></div>
+            <div id="change_per_div" style="width: 100%; height: 250px"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== End Expenditure Statistics Section ====== -->
+
+    <!-- ======= Geographical View Section ======= -->
+    <section id="heatmap" class="heatmap section -bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Global Map</h2>
+          <p></p>
+        </div>
+ 
+        <div class="row">
+
+          <div id = 'geodashboard_div'>
+            <div id='filter_div'></div>
+            <div id='category_div'></div>
+            <div id = 'heat_map_div' style="width: 100%; height: 500px;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= End Geographical View Section =======-->
+
+    <!-- ======= Country Dashboard Section ======= -->
+    <section id="country" class="country section -bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Country Dashboard</h2>
+          <p></p>
+        </div>
+          <div class="row">
+              <div id = 'countrydashboard_div'>
+                <div id='country_div'></div>
+                <div id='year_div'></div>
+                <table class = 'columns'>
+                  <tr>
+                  <td><div id = 'step_div' style="width: 600px; height: 400px;"></div></td>
+                  <td><div id = 'column_div' style="width: 600px; height: 400px;"></div></td>
+                  </tr>
+               </table>
+              </div>
+            
+        </div>
+      </div>
+   
+    </section>
+    <!-- ======= End Country Dashbaord Section ====== -->
+
+     <!-- ======= Country compare Section ======= -->
+     <section id="compare" class="compare section -bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Country Compare</h2>
+          <p>Comments here</p>
+        </div>
+        <div class="row">
+            <div id = 'comparedashboard_div'></div>
+              <div id='year2_div'></div>
+              <div id = 'bubble_div' style="width: 100%; height: 500px;"></div>
+        </div>
+      </div>
+
+    <!-- ======= Conclusion Section ======= -->
+    <section id="conclusion" class="conclusion">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Conclusion</h2>
+          <p></p>
+        </div>
+
+        <div class = 'paragraph'>
+          <p>Some key takeaways from looking over the visualizations:</p>
+          <p>The United States has the highest expenditure in dollars and percentage of GDP for the combined for the three expenditures
+             in total. By 2015 Russia percent of GDP military expenditure surpasses the United States, however, this is not due to increase 
+             in military expenditure it is driven by an economic downturn, likely driven by economic sanctions due to the annexation of Crimea,
+              and the 2015 collapse of oil prices.</p>
+              
+          <p>Education expenditure saw a uniform decrease in expenditure in 2015 except for the United States, this seems to be caused by an economic
+             downturn outside of the United States. I would not expect this trend to continue, once international economics improved, I would expect to
+              see a rebound in education expenditure. </p>
+            
+            <p>Healthcare expenditure, much like military expenditure is highest by far in the United States. Healthcare expenditure saw a general
+               rise starting in 2011 and continued until 2015 in general. The United States had the greatest increase in healthcare expenditure from
+                2005 to 2015 in total dollars, however 4 countries had higher percentage increases Australia, Brazil, South Korea, and Russia. </p>
+            
+            <p>Overall trends see downturns in all expenditure outside of the United States in 2015, this was driven by decreases in GDP shrinking
+               international economies, as stated about education, I would expect this trend to not continue. In 2015 there were several geopolitical 
+               incidents in Syria, Iraq, and Ukraine, in 2014-2015, and I would expect a renewed expansion of military expenditure once economies
+                stabilize, particularly in Russia. </p>
+            
+        </div>
+      </div>
+    </section><!-- End Conclusion Section -->
+
+    <!-- ======= Data Sources Section ======= -->
+    <section id="sources" class="sources">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Data Sources</h2>
+          <p></p>
+        </div>
+        <div class = 'paragraph'>
+          <p>OECD: Used for Education data</p> 
+          <a href="https://stats.oecd.org/Index.aspx?DatasetCode=HEALTH_STAT">OECD Statistics</a>
+          <p>  </p>
+          <p>World Bank: Used for GDP, Healthcare, Military, and Population data</p> 
+          <a href="https://databank.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG/1ff4a498/Popular-Indicators">World Bank Popular Indicators</a>
+        </div>
+
+      </div>
+    </section><!-- End Conclusion Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>OnePage</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+
+
+<!--  ======= Expense Type button Script Section =======-->
+<script type= "text/javascript">
+
+      
+  document.querySelector('.custom-select-wrapper').addEventListener('click', function() {
+  this.querySelector('.custom-select').classList.toggle('open');
+  })
+
+  for (const option of document.querySelectorAll('.custom-option')) {
+    option.addEventListener('click', function() {
+        if (!this.classList.contains('selected')) {
+            this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
+            this.classList.add('selected');
+            this.closest('.custom-select').querySelector('.custom-select__trigger span').textContent = this.textContent;
+        }
+    })
+  }
+
+  </script>
+
+<!-- End Expense Type button Section-->
+
+<!--======= Google Chart Section ======= -->
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load('current', {'packages':['corechart','geochart', 'controls'],
+'mapsApiKey': 'AIzaSyDDY-FX274FmzdJcEsvYJCVvxC9baD16go'
+}).then(function() {
+$(".custom-options").click(drawALLSheet)
+ }); // Draws charts based on click on expense type button
+
+ // Draws Non click based Google Charts
+google.charts.setOnLoadCallback(drawOtherSheet)
+function drawOtherSheet() {
+drawSheetName('GEO', 'SELECT A:D', geoResponseHandler)
+drawSheetName('data', 'SELECT A:P', countryResponseHandler)
+drawSheetName('data', 'SELECT A:Q', compareResponseHandler)
+} // drawOtherSheet
+
+function drawALLSheet() {
+drawSheetName($('.custom-option.selected').attr('data-value')+'Exp','SELECT A:M', expenseResponseHandler);
+drawSheetName($('.custom-option.selected').attr('data-value')+'pGDP','SELECT A:M', gdpResponseHandler);
+drawSheetName($('.custom-option.selected').attr('data-value')+'PC','SELECT A:M', perCapResponseHandler);
+drawSheetName($('.custom-option.selected').attr('data-value')+'CH','SELECT A:N', changeResponseHandler);
+drawSheetName($('.custom-option.selected').attr('data-value')+'CHp','SELECT A:N', changePerResponseHandler);
+} //drawAllSheets
+
+
+function drawSheetName(sheetName, query, responseHandler){
+var queryString = encodeURIComponent(query);
+var query = new google.visualization.Query(
+    'https://docs.google.com/spreadsheets/d/1n-ofNipS_zzzuz2dtec36d7HTEILrqBA0zcyJ_oEVVo/gviz/tq?sheet=' 
+    + sheetName + '&headers=1&tq?range=' + queryString);
+query.send(responseHandler);
+}//drawSheetName
+
+function expenseResponseHandler(response){
+  var data = response.getDataTable();
+  
+  //convert column type to "number"
+  var view = new google.visualization.DataView(data);
+    view.setColumns([0,1,2,3,4,5,6,7,8,9,10,11,12],{type : 'number'});
+
+  var options = {  
+      vAxis: {title: 'Spending in Billions ($)', format: 'currency'},
+      hAxis: {title: 'Year', format: '####'}
+  };
+
+  var chart = new google.visualization.LineChart(document.getElementById('expense_spending_div'));
+  chart.draw(view, options);
+  }//expenseResponseHandler
+
+function gdpResponseHandler(response){
+  var data = response.getDataTable();
+
+   //convert column type to "number"
+  var view = new google.visualization.DataView(data);
+    view.setColumns([0,1,2,3,4,5,6,7,8,9,10,11,12],{type : 'number'});
+
+  var options = {  
+      vAxis: {title: '% of GDP', format: 'percent'},
+      hAxis: {title: 'Year', format: '####'}
+  };
+  var chart = new google.visualization.LineChart(document.getElementById('percent_gdp_div'));
+  google.visualization.events.addListener(chart, 'error', function (googleError) {
+    google.visualization.errors.removeError(googleError.id)});
+  chart.draw(view, options);
+}//gdpResponseHandler
+
+function perCapResponseHandler(response){
+  var data = response.getDataTable();
+
+   //convert column type to "number"
+   var view = new google.visualization.DataView(data);
+    view.setColumns([0,1,2,3,4,5,6,7,8,9,10,11,12],{type : 'number'});
+
+  var options = {  
+      vAxis: {title: '$ per Capita', format: 'currency'},
+      hAxis: {title: 'Year', format: '####'}
+  };
+  var chart = new google.visualization.LineChart(document.getElementById('per_capita_div'));
+  chart.draw(view, options);
+}//perCapResponseHandler
+
+function changeResponseHandler(response){
+  var data = response.getDataTable();
+
+     //convert column type to "number"
+  var view = new google.visualization.DataView(data);
+    view.setColumns([0,1,2,3,4,5,6,7,8,9,10,11,12,13],{type : 'number'});
+      
+  var options = {  
+      vAxis: {title: '$ Change in Billions', format: 'currency'},
+      hAxis: {title: 'Year', format: '####', 
+              viewWindow : {min : 2008}},
+      seriesType: 'bars',
+      bar : { groupWidth : '95%' },
+      series: {12: {type: 'line'}},
+      legend : 'none'
+  };
+  var chart = new google.visualization.ComboChart(document.getElementById('change_div'));
+  chart.draw(view, options)
+} // changeResponseHandler
+
+function changePerResponseHandler(response){
+  var data = response.getDataTable();
+
+     //convert column type to "number"
+  var view = new google.visualization.DataView(data);
+    view.setColumns([0,1,2,3,4,5,6,7,8,9,10,11,12,13],{type : 'number'});  
+
+  var options = {  
+      vAxis: {title: '% Change in Billions', format: 'percent'},
+      hAxis: {title: 'Year', format: '####',
+                 viewWindow : {min : 2008}},
+      seriesType: 'bars',
+      bar : { groupWidth : '95%' },
+      series: {12: {type: 'line'}},
+      legend : 'bottom'
+  };
+  var chart = new google.visualization.ComboChart(document.getElementById('change_per_div'));
+  chart.draw(view, options)
+} // changePerResponseHandler
+
+
+
+function geoResponseHandler(response) {
+  var data = response.getDataTable();
+
+  var dashboard = new google.visualization.Dashboard(
+          document.getElementById('geodashboard_div'));
+
+  var yearRangeSlider = new google.visualization.ControlWrapper ({
+    'controlType' : 'CategoryFilter',
+    'containerId' :  'filter_div',
+    'options' : {
+      'filterColumnLabel' : 'Year',
+      'ui': {
+      'allowMultiple' : false
+      }
+    }
+  });
+
+  var dataTypeFilter = new google.visualization.ControlWrapper ({
+    'controlType' : 'CategoryFilter',
+    'containerId' :  'category_div',
+    'options' : {
+      'filterColumnLabel' : 'Indicator',
+      'ui': {
+      'allowMultiple' : false
+      }
+    }
+  });
+
+  var geoChart = new google.visualization.ChartWrapper({
+    'chartType':'GeoChart',
+    'containerId': 'heat_map_div',
+    'view': {'columns':[2,3]},
+    options: {
+      displayMode: 'regions'
+  }
+  });
+  
+  dashboard.bind([yearRangeSlider , dataTypeFilter], geoChart);
+  dashboard.draw(data);
+}; // geoResponseHandler
+
+function countryResponseHandler(response) {
+  var data = response.getDataTable();
+
+  var dashboard = new google.visualization.Dashboard(
+          document.getElementById('countrydashboard_div'));
+
+  var yearSlider = new google.visualization.ControlWrapper ({
+    'controlType' : 'NumberRangeFilter',
+    'containerId' :  'year_div',
+    'options' : {
+      'filterColumnLabel' : 'Year',
+      'ui': {
+      'allowMultiple' : false
+      }
+    }
+  });
+
+  var countryFilter = new google.visualization.ControlWrapper ({
+    'controlType' : 'CategoryFilter',
+    'containerId' :  'country_div',
+    'options' : {
+      'filterColumnLabel' : 'Country',
+      'ui': {
+      'allowMultiple' : false
+      }
+    }
+  });
+
+  var columnChart = new google.visualization.ChartWrapper({
+    'chartType':'ColumnChart',
+    'containerId': 'column_div',
+    'view': {'columns':[2,11,12,13]},
+    'options': { 'title' : 'Expenditure Per Capita',
+      'hAxis' : { 'title' : 'Year', 'format' : '####' }}
+  });
+
+  var stepChart = new google.visualization.ChartWrapper({
+    'chartType':'AreaChart',
+    'containerId': 'step_div',
+    'view': {'columns':[2,3,5,10]},
+    'options': { 'title' : '% of GDP',
+      'hAxis' : {'title': 'Year', 'format' : "####" },
+                'vAxis' : {'title' : 'Year' , 'format' : '##.#'},
+              'isStacked' : 'true'}
+  });
+  
+  dashboard.bind([yearSlider , countryFilter], [columnChart, stepChart]);
+
+  dashboard.draw(data);
+}; // countryResponseHandler
+
+
+function compareResponseHandler(response) {
+  var data = response.getDataTable();
+
+  var dashboard = new google.visualization.Dashboard(
+          document.getElementById('geodashboard_div'));
+
+  var year2Slider = new google.visualization.ControlWrapper ({
+    'controlType' : 'CategoryFilter',
+    'containerId' :  'year2_div',
+    'options' : {
+      'filterColumnLabel' : 'Year',
+      'ui': {
+      'allowMultiple' : false
+      }
+    }
+  });
+
+  var bubbleChart = new google.visualization.ChartWrapper({
+    'chartType':'BubbleChart',
+    'containerId': 'bubble_div',
+    'view': {'columns':[1,16,11,7]},
+    options: { 'vAxis' : {'title': 'Military Spend Per Capita' ,
+                          'format' : '#,###'},
+                'hAxis' : {'title': 'Healthcare & Education Spend Per Capita' ,
+                          'format' : '#,###'},
+                'bubble' : {'fontSize' : 11},
+                'sizeAxis' : {'maxSize' : 20}}
+  });
+  
+  dashboard.bind(year2Slider , bubbleChart);
+  dashboard.draw(data);
+}; // compareResponseHandler
+
+</script>
+
+<!--End Googe Charts Section-->
+
+</html>
